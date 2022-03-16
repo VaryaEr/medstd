@@ -1,6 +1,7 @@
 <template>
+  <h1>Медстандарт</h1>
 <div>
-  <Nuxt/>
+  <slot />
 </div>
 
 </template>

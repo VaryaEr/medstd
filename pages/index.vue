@@ -8,7 +8,7 @@
   </section>
 </template>
 <script>
-export default {
-
-}
+definePageMeta({
+  layout: "default",
+});
 </script>
