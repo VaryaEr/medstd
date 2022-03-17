@@ -14,7 +14,8 @@ export default defineNuxtPlugin((nuxtApp) => {
         components: {
             VApp,
             VAppBar,
-            VBtn  }
+            VBtn
+        }
     })
     nuxtApp.vueApp.use(vuetify)
 })
