@@ -25,5 +25,9 @@ Build the application for production:
 ```bash
 npm run build
 ```
+## Vue cli
 
+```bash
+vue ui
+```
 Checkout the [deployment documentation](https://v3.nuxtjs.org/docs/deployment).

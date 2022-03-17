@@ -1,9 +1,11 @@
 {
   "private": true,
   "scripts": {
-    "dev": "nuxi dev",
-    "build": "nuxi build",
-    "start": "node .output/server/index.mjs"
+    "serve": "vue-cli-service serve",
+    "prod": "vue-cli-service build",
+    "build": "vue-cli-service build --watch",
+    "lint": "vue-cli-service lint --fix",
+    "dev": "nuxi dev"
   },
   "devDependencies": {
     "nuxt3": "latest",
@@ -11,9 +13,11 @@
   },
   "dependencies": {
     "@nuxtjs/axios": "^5.13.6",
+    "axios": "^0.26.1",
     "vue-router": "^4.0.14",
     "vuetify": "^3.0.0-alpha.12",
     "vuex": "^4.0.2",
+    "watchjs": "^0.0.0",
     "webpack": "^5.0.0-rc.6"
   }
 }
