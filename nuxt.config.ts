@@ -7,10 +7,16 @@ export default defineNuxtConfig({
         transpile: ['vuetify']
     },
     vite: {
+        define: {
+            'process.env.DEBUG': 'false',
+        },
         configFile: false
     },
     modules: ["@nuxtjs/axios"],
     axios: {
         proxyHeaders: false,
     },
+    plugins: [
+        '~/plugins/axios'
+    ]
 })
