@@ -12,11 +12,14 @@ export default defineNuxtConfig({
         },
         configFile: false
     },
-    modules: ["@nuxtjs/axios"],
+    buildModules: [
+        '~/modules/nuxt-axios',
+    ],
     axios: {
-        proxyHeaders: false,
+        credentials: true,
+        proxy: true
     },
-    plugins: [
-        '~/plugins/axios'
-    ]
+    proxy: {
+
+    }
 })

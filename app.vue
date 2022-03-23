@@ -1,25 +1,25 @@
 <template>
   <div class="d-flex justify-space-around align-center flex-column flex-sm-row fill-height">
-    <v-btn flat>
+    <v-btn flat="">
       Normal
     </v-btn>
 
     <v-btn
-        flat
+        flat=""
         color="secondary"
     >
       Secondary55
     </v-btn>
 
     <v-btn
-        flat
+        flat=""
         color="error"
     >
       Error
     </v-btn>
 
     <v-btn
-        flat
+        flat=""
         disabled
     >
       Disabled
@@ -27,5 +27,7 @@
   </div>
 </template>
 <script>
-export default 
+export default{
+
+}
 </script>

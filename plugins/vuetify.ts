@@ -1,21 +1,12 @@
 import { defineNuxtPlugin } from '#app'
 import { createVuetify } from 'vuetify'
-import {
-    VApp,
-    VAppBar,
-    VBtn
-} from 'vuetify/components'
-
-// Import everything
-// import * as components from 'vuetify/components'
+import * as components from 'vuetify/components'
+import vuetifyConfig from '../vuetify.config'
 
 export default defineNuxtPlugin((nuxtApp) => {
     const vuetify = createVuetify({
-        components: {
-            VApp,
-            VAppBar,
-            VBtn
-        }
+        ...vuetifyConfig,
+        components,
     })
     nuxtApp.vueApp.use(vuetify)
 })
